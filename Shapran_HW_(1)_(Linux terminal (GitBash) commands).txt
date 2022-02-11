@@ -25,20 +25,23 @@
 http://162.55.220.72:5005/terminal-hw-request - curl http://162.55.220.72:5005/terminal-hw-request
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
+Написать скрипт - nano myscript1.sh -> 
+
+                                    #! /bin/bash
+Создать 3 папки                   - mkdir Lesson1_2 Lesson1_3 Lesson1_4
+Зайти в любоую папку              - cd Lesson1_3
+Создать 5 файлов                  - touch 1.txt 2.txt 3.txt 1.json 2.json
+Создать 3 папки.                  - mkdir dir1 dir2 dir3
+Вывести список содержимого папки  - ls -> cd dir2 -> touch 1.txt 2.txt 3.txt 1.json 2.json -> cd ..
+переместить любые 2 файла, которые
+вы создали, в любую другую папку  - mv dir2/2.txt dir2/3.txt dir1
+                                  - ls
+                                  - echo "Done"
 
 
-
-
-
-#! /bin/bash
-
-Зайти в папку - cd Lesson1_1
-Создать 3 папки - mkdir Lesson1_2 Lesson1_3 Lesson1_4
-Зайти в любоую папку - cd Lesson1_3
-Создать 5 файлов - touch 1.txt 2.txt 3.txt 1.json 2.json
-Создать 3 папки - mkdir dir1 dir2 dir3
-Вывести список содержимого папки - ls -> cd dir2 -> touch 1.txt 2.txt 3.txt 1.json 2.json -> cd ..
-переместить любые 2 файла, которые вы создали, в любую другую папку - mv dir2/2.txt dir2/3.txt dir1
-ls
-
-echo "Done"
+Сохранить myscript1.sh: control+X -> Y 
+Запустить скрипт в terminal в папке Lesson1: bash myscript1.sh
+Увидеть: - Созданы 3 папки Lesson1_2 Lesson1_3 Lesson1_4
+         - Созданы 5 файлов touch 1.txt 2.txt 3.txt 1.json 2.json
+         - Созданы 3 папки dir1 dir2 dir3
+         - В папку dir1 перемещены два файла из dir2
